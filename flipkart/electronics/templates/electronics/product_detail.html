@@ -248,6 +248,10 @@
                 <h2>{{ pro.name }}</h2>
                 <p class="product-price">₹{{ pro.price }}</p>
                 <p>{{ pro.description }}</p>
+
+                <a href="{% url 'update_product' pro.id %}"><button type="button">Update</button></a>
+                <a href="{% url 'delete_product' pro.id %}"><button type="button">Delete</button></a>
+
             </div>
             <div class="product-actions">
                 <button class="add-to-cart">Add to Cart</button>
